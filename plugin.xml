@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-icloud-document" version="0.0.1-dev">
+    <name>iCloud Document Plugin</name>
+    <description>Cordova iCloud Document Plugin</description>
+    <license>GPL</license>
+    <keywords>cordova,iCloud,Document</keywords>
+
+    <js-module src="www/iCloudDocument.js" name="iCloudDocument">
+        <clobbers target="device" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="iCloud Document">
+                <param name="ios-package" value="CDViCloudDocument"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDViCloudDocument.h" />
+        <source-file src="src/ios/CDViCloudDocument.m" />
+    </platform>
+
+</plugin>
