@@ -3,19 +3,20 @@ var exec = require('cordova/exec');
 var iCloudDocument = {
 
     check: function (fileName) {
-        exec(successCallback, erroCallback, 'echo', []);
+        exec(successCallback, erroCallback, 'checking', []);
     },
 
     list: function () {
-        exec(successCallback, errorCallback, 'echo', []);
+        exec(successCallback, errorCallback, 'listing', []);
     },
 
     upload: function (fileName) {
-        exec(successCallback, errorCallback, 'echo', []);
+        var args = fileName;
+        exec(successCallback, errorCallback, 'uploading', [args]);
     },
 
     retrieve: function () {
-        exec(successCallback, errorCallback, 'echo', []);
+        exec(successCallback, errorCallback, 'retrieving', []);
     }
 };
 
