@@ -2,11 +2,19 @@
   "name": "cordova-plugin-icloud-document",
   "version": "0.0.1-dev",
   "description": "Cordova iCloud Document Plugin",
+  "main": "www/iCloudDocument.js",
   "cordova": {
     "id": "cordova-plugin-icloud-document",
     "platforms": [
       "ios"
     ]
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "2.0.0": {
+        "cordova-ios": ">2.0.0"
+      }
+    }
   },
   "repository": {
     "type": "git",
@@ -19,12 +27,5 @@
     "cordova-ios"
   ],
   "author": "Gabriel Vieira Figueiredo Tomaz",
-  "license": "GPL",
-  "engines": {
-    "cordovaDependencies": {
-      "2.0.0": {
-        "cordova": ">100"
-      }
-    }
-  }
+  "license": "GPL"
 }
